@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "name": "Book A",
+      "price": 10.99
+    },
+    {
+      "id": 2,
+      "name": "Book B",
+      "price": 10.9
+    },
+    {
+      "id": 3,
+      "name": "Book C",
+      "price": 12.50
+    },
+    {
+      "id": 4,
+      "name": "Book D",
+      "price": 15.50
+    },
+    {
+      "id": 5,
+      "name": "Book D",
+      "price": 22.0
+    },
+    {
+      "id": 6,
+      "name": "Book E",
+      "price": 18.98
+    }
+  ]
