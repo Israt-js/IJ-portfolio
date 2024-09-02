@@ -1,9 +1,6 @@
 import React from 'react';
 import Banner from './Banner';
-import BlogPost from '../Blog/BlogPost';
 import { motion } from 'framer-motion';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import GetInTouch from '../aboutMe/GetTouch';
 
 const Home = () => {
   // Sample projects data
@@ -113,43 +110,69 @@ const Home = () => {
 
           {/* Testimonials Section */}
           <section className="py-16 bg-gray-50 dark:bg-gray-900">
-            <h3 className="text-4xl font-bold text-gray-900 dark:text-white text-center mb-12">What People Say</h3>
-            <div className="relative">
-              {/* Carousel Container */}
-              <motion.div
-                className="flex overflow-hidden"
-                initial={{ x: 0 }}
-                animate={{ x: -currentIndex * 100 + '%' }}
-                transition={{ duration: 0.5, ease: 'easeInOut' }}
+    <h3 className="text-4xl font-bold text-gray-900 dark:text-white text-center mb-12">
+      What People Say
+    </h3>
+    <div className="relative">
+      {/* Carousel Container */}
+      <motion.div
+        className="flex overflow-hidden"
+        initial={{ x: 0 }}
+        animate={{ x: -currentIndex * 100 + '%' }}
+        transition={{ duration: 0.5, ease: 'easeInOut' }}
+      >
+      {[
+        {
+          name: "Khairul Islam",
+          email: "khairulch08@gmail.com",
+          feedback: "Israt is an exceptional developer. Her attention to detail and commitment to delivering high-quality work is remarkable.",
+          imgSrc: "src/component/Home/KhairulWebPic.jpg",
+        },
+        {
+          name: "Johirul Islam Hamim",
+          email: "mdjohirulislamhamim@gmail.com",
+          feedback: "I had a great experience working with Israt. She brought our ideas to life with her innovative solutions and expertise.",
+          imgSrc: "src/component/Home/HamimWebPic.jpg",
+        },
+        {
+          name: "Bahadur Khan",
+          email: "programhero70@gmail.com",
+          feedback: "Highly recommended! Israt's professionalism and technical skills exceeded our expectations. She is a true asset to any project.",
+          imgSrc: "src/component/Home/Abbu.png",
+        },
+      ].map((testimonial, index) => (
+        <div
+          key={index}
+          className="flex-none w-full md:w-1/2 lg:w-1/3 px-4"
+        >
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 text-center">
+            <img
+              className="w-24 h-24 mb-4 rounded-full mx-auto"
+              src={testimonial.imgSrc}
+              alt={testimonial.name}
+            />
+            <h4 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">
+              {testimonial.name}
+            </h4>
+            <p className="text-gray-600 dark:text-gray-300 mb-3">
+              <strong>Email:</strong>{' '}
+              <a
+                href={`mailto:${testimonial.email}`}
+                className="text-indigo-600 hover:underline"
               >
-                {[
-                  {
-                    name: "Khairul Islam",
-                    feedback: "Israt is an exceptional developer. Her attention to detail and commitment to delivering high-quality work is remarkable.",
-                    imgSrc: "https://via.placeholder.com/100"
-                  },
-                  {
-                    name: "Johirul Islam Hamim",
-                    feedback: "I had a great experience working with Israt. She brought our ideas to life with her innovative solutions and expertise.",
-                    imgSrc: "https://via.placeholder.com/100"
-                  },
-                  {
-                    name: "Bahadur Khan",
-                    feedback: "Highly recommended! Israt's professionalism and technical skills exceeded our expectations. She is a true asset to any project.",
-                    imgSrc: "https://via.placeholder.com/100"
-                  }
-                ].map((testimonial, index) => (
-                  <div key={index} className="flex-none w-full md:w-1/2 lg:w-1/3 px-4">
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 text-center">
-                      <img className="w-24 h-24 mb-4 rounded-full mx-auto" src={testimonial.imgSrc} alt={testimonial.name} />
-                      <h4 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-3">{testimonial.name}</h4>
-                      <p className="text-gray-600 dark:text-gray-300">{testimonial.feedback}</p>
-                    </div>
-                  </div>
-                ))}
-              </motion.div>
-            </div>
-          </section>
+                {testimonial.email}
+              </a>
+            </p>
+            <p className="text-gray-600 dark:text-gray-300">
+              {testimonial.feedback}
+            </p>
+          </div>
+        </div>
+      ))}
+    </motion.div>
+  </div>
+        </section>
+
         </main>
         <div className="flex flex-wrap justify-around bg-[#63e7a9] p-12 mt-24">
         {/* Let's Connect Section */}
