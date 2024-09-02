@@ -12,37 +12,20 @@ const Resume = () => {
          { 
            section: "My Education", 
            items: [
-             { 
-               title: "Master in Computer Engineering", 
-               institution: "Harvard University", 
-               period: "2015 - 2017", 
-               description: "Specialized in advanced computer engineering with a focus on system design, algorithms, and programming languages."
-             },
-             {
-               title: "Bachelor in Computer Science",
-               institution: "MIT",
-               period: "2011 - 2015",
-               description: "Gained a strong foundation in software development, data structures, and web technologies."
-             }
+            { 
+              title: "Full-stack Web Development", 
+              institution: "Programming Hero", 
+              period: "2023 - 2024", 
+              description: "Completed an intensive course covering both front-end and back-end technologies, including JavaScript, React, Node.js, Express.js, and MongoDB. The program emphasized practical, hands-on projects, preparing me to build full-stack applications from scratch."
+            },
+            {
+              title: "Secondary School Certificate",
+              institution: "Nischintapur Dewan Idris High School",
+              period: "2021 - 2026",
+              description: "Pursued a broad academic curriculum with a focus on foundational knowledge in various subjects. Developed critical thinking and problem-solving skills through coursework and extracurricular activities."
+            }            
            ]
          }, 
-         { 
-           section: "My Experience", 
-           items: [
-             { 
-               title: "Senior Software Engineer", 
-               institution: "Google", 
-               period: "2018 - Present", 
-               description: "Led a team to develop scalable web applications, enhancing user experience and implementing cutting-edge technologies."
-             },
-             {
-               title: "Software Engineer",
-               institution: "Facebook",
-               period: "2017 - 2018",
-               description: "Contributed to both front-end and back-end development, improving performance and user engagement."
-             }
-           ]
-         },
          {
            section: "Skills",
            items: [

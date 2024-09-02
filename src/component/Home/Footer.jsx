@@ -1,42 +1,6 @@
 const Footer = () => {
 return (
  <div className="">
-    <div className="flex flex-wrap justify-around bg-[#63e7a9] p-12 mt-24">
-        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-6">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center sm:text-left">
-            Let's Connect
-          </h3>
-          <p className="text-gray-600 text-base text-center sm:text-left mb-4">
-            Please fill out the form on this section to contact with me or call between 9:00 A.M and 8:00 P.M ET, Monday through. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, facere.
-          </p>
-          <div className="flex justify-center sm:justify-start space-x-4">
-            <a href="#" className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-xl">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-xl">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-xl">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="#" className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-xl">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </div>
-  
-        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-6">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center sm:text-left">
-            Message Me
-          </h3>
-          <form action="" className="space-y-4">
-            <input className="w-full p-3 border border-gray-300 rounded-md" type="text" placeholder="Your Name" />
-            <input className="w-full p-3 border border-gray-300 rounded-md" type="email" placeholder="Your Email" />
-            <textarea className="w-full p-3 border border-gray-300 rounded-md" placeholder="Message" rows="5"></textarea>
-            <input className="w-full bg-green-600 text-white p-3 rounded-md cursor-pointer hover:bg-green-700 transition-colors duration-300" type="submit" value="Submit" />
-          </form>
-        </div>
-    </div>
     <footer className="bg-gray-900 text-gray-200 py-10">
       <div className="container mx-auto px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div>

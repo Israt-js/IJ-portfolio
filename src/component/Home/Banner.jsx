@@ -76,7 +76,7 @@ const Banner = () => {
           <div className="flex flex-col items-center md:items-start mt-8">
             <p className="text-gray-700 text-[16px] sm:text-[18px] mb-2">Want to see my work?</p>
             <a 
-              href="/projects" 
+              href="/project" 
               className="bg-green-600 text-white text-[15px] sm:text-[17px] px-6 py-3 rounded-full hover:bg-green-700 transition-colors duration-300 flex items-center"
             >
               <FaCode className="mr-2" /> View Projects
@@ -85,7 +85,7 @@ const Banner = () => {
         </div>
         <img
           className="w-[90%] md:w-[450px] mx-auto md:mx-0 shadow-lg rounded-lg"
-          src="src/component/Home/make-removebg-preview.png"
+          src="src/component/Home/isratdevpic.png"
           alt="Profile"
         />
       </div>

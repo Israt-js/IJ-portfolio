@@ -14,6 +14,8 @@ import BlogPost from './component/Blog/BlogPost';
 import Banner from './component/Home/Banner';
 import Resume from './component/Resume/Resume';
 import Project from './component/project/Project';
+import AboutMe from './component/aboutMe/AboutMe';
+import GetInTouch from './component/aboutMe/GetTouch';
 
 const router = createBrowserRouter([
   {
@@ -35,7 +37,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/project",
-        element: <Project></Project>
+        element: <Project></Project>,
+      },
+      {
+        path: "/about",
+        element: <AboutMe></AboutMe>,
+      },
+      {
+        path: "/getin",
+        element: <GetInTouch></GetInTouch>,
       },
       {
         path: "/blog",

@@ -3,25 +3,23 @@ import Banner from './Banner';
 import BlogPost from '../Blog/BlogPost';
 import { motion } from 'framer-motion';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import GetInTouch from '../aboutMe/GetTouch';
 
 const Home = () => {
   // Sample projects data
   const projects = [
     {
       title: "Project One",
-      imgSrc: "https://via.placeholder.com/300",
       description: "An innovative web application that solves complex problems with a sleek interface.",
       link: "https://recipe-7.web.app/"
     },
     {
       title: "Project Two",
-      imgSrc: "https://via.placeholder.com/300",
       description: "A mobile app that enhances user experience with intuitive navigation and powerful features.",
       link: "https://pet-client-10e14.web.app/"
     },
     {
       title: "Project Three",
-      imgSrc: "https://via.placeholder.com/300",
       description: "A full-stack solution that integrates modern technologies for optimal performance.",
       link: "https://real-estate-residensial-9.web.app/"
     }
@@ -103,7 +101,6 @@ const Home = () => {
             <div className="flex flex-wrap justify-center gap-8">
               {projects.map((project) => (
                 <div key={project.title} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden w-full md:w-1/2 lg:w-1/3">
-                  <img className="w-full h-48 object-cover" src={project.imgSrc} alt={project.title} />
                   <div className="p-6">
                     <h4 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-3">{project.title}</h4>
                     <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
@@ -154,6 +151,84 @@ const Home = () => {
             </div>
           </section>
         </main>
+        <div className="flex flex-wrap justify-around bg-[#63e7a9] p-12 mt-24">
+        {/* Let's Connect Section */}
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-6">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center sm:text-left">
+            Let's Connect
+          </h3>
+          <p className="text-gray-600 text-base text-center sm:text-left mb-4">
+            Please fill out the form on this section to contact me or call between
+            9:00 A.M and 8:00 P.M ET, Monday through Friday. I look forward to
+            connecting with you!
+          </p>
+          <p className="text-gray-600 text-base text-center sm:text-left mb-4">
+            As a Full Stack Software Developer with experience in JavaScript, React, Node.js, and more, I’m always excited to collaborate on innovative projects. Whether you’re looking to discuss potential work opportunities, exchange ideas, or just network, don’t hesitate to reach out!
+          </p>
+          <div className="flex justify-center sm:justify-start space-x-4">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-xl"
+              aria-label="Facebook"
+            >
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="#"
+              className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-xl"
+              aria-label="Twitter"
+            >
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a
+              href="#"
+              className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-xl"
+              aria-label="Instagram"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              className="text-gray-600 hover:text-green-600 transition-colors duration-300 text-xl"
+              aria-label="LinkedIn"
+            >
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        {/* Message Me Section */}
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-6">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center sm:text-left">
+            Message Me
+          </h3>
+          <form action="" className="space-y-4">
+            <input
+              className="w-full p-3 border border-gray-300 rounded-md"
+              type="text"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              className="w-full p-3 border border-gray-300 rounded-md"
+              type="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              className="w-full p-3 border border-gray-300 rounded-md"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+            <input
+              className="w-full bg-green-600 text-white p-3 rounded-md cursor-pointer hover:bg-green-700 transition-colors duration-300"
+              type="submit"
+              value="Submit"
+            />
+          </form>
+        </div>
+      </div>
       </div>
     </>
   );
