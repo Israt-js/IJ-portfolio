@@ -9,6 +9,11 @@ import {
 import ErrorPage from './ErrorPage';
 import Root from './component/Root/Root';
 import Home from './component/Home/Home';
+import Blog from './component/Blog/Blog';
+import BlogPost from './component/Blog/BlogPost';
+import Banner from './component/Home/Banner';
+import Resume from './component/Resume/Resume';
+import Project from './component/project/Project';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +24,26 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/banner",
+        element: <Banner></Banner>,
+      },
+      {
+        path: "/resume",
+        element: <Resume></Resume>
+      },
+      {
+        path: "/project",
+        element: <Project></Project>
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>,
+      },
+      {
+        path: "/blog/:id",
+        element: <BlogPost></BlogPost>,
       },
     ],
   },
